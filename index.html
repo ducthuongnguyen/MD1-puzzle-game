@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+    <style id="color">
+        img {
+            box-shadow: grey 4px 4px 9px;
+        }
+    </style>
+</head>
+<body>
+<img id="row1" src="image/a1.jpg" height="100" width="500" onclick="changeImage()"><br>
+<img id="row2" src="image/a2.jpg" height="100" width="500" onclick="changeImage2()"><br>
+<img id="row3" src="image/a3.jpg" height="100" width="500" onclick="changeImage3()"><br>
+<img id="row4" src="image/a4.jpg" height="100" width="500" onclick="changeImage4()"><br>
+</body>
+</html>
+<script>
+    let image1 = [
+        'image/a1.jpg',
+        'image/b1.png',
+        'image/c1.jpg',
+    ]
+    let count1 = 0;
+
+    function changeImage() {
+        let a1 = document.getElementById('row1');
+        count1++;
+        if (count1 >= image1.length) {
+            count1 = 0;
+        }
+        a1.src = image1[count1]
+    }
+
+    let image2 = [
+        'image/a2.jpg',
+        'image/b2.png',
+        'image/c2.jpg',
+    ]
+    let count2 = 0;
+
+    function changeImage2() {
+        let a2 = document.getElementById('row2');
+        count2++;
+        if (count2 >= image2.length) {
+            count2 = 0;
+        }
+        a2.src = image2[count2]
+    }
+
+    let image3 = [
+        'image/a3.jpg',
+        'image/b3.png',
+        'image/c3.jpg',
+    ]
+    let count3 = 0;
+
+    function changeImage3() {
+        let a3 = document.getElementById('row3');
+        count3++;
+        if (count3 >= image3.length) {
+            count3 = 0;
+        }
+        a3.src = image3[count3]
+    }
+
+    let image4 = [
+        'image/a4.jpg',
+        'image/b4.png',
+        'image/c4.jpg',
+    ]
+    let count4 = 0;
+
+    function changeImage4() {
+        let a4 = document.getElementById('row4');
+        count4++;
+        if (count4 >= image4.length) {
+            count4 = 0;
+        }
+        a4.src = image4[count4]
+    }
+    //
+    // if (count1 == count2 && count2 == count3 && count3 == count4) {
+    //     document.getElementById('color').style.boxShadow = 'red' + 4 + 'px' + 4 + 'px' + 9 + 'px';
+    // }
+
+</script>
