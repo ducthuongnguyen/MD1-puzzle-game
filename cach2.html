@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+    <!--    <style id="color">-->
+    <!--        img {-->
+    <!--            box-shadow: grey 4px 4px 9px;-->
+    <!--        }-->
+    </style>
+</head>
+<body>
+<img id="row1" src="image/a1.jpg" height="150" width="700" onclick="changeImage()"><br>
+<img id="row2" src="image/a2.jpg" height="150" width="700" onclick="changeImage2()"><br>
+<img id="row3" src="image/a3.jpg" height="150" width="700" onclick="changeImage3()"><br>
+<img id="row4" src="image/a4.jpg" height="150" width="700" onclick="changeImage4()"><br>
+</body>
+</html>
+<script>
+    let count1 = 0;
+    let count2 = 1;
+    let count3 = 2;
+    let count4 = 3;
+    let image1 = document.getElementById('row1');
+    let image2 = document.getElementById('row2');
+    let image3 = document.getElementById('row3');
+    let image4 = document.getElementById('row4');
+
+    function changeImage() {
+        count1++;
+        if (count1 == 1) {
+            image1.src = 'image/a1.jpg'
+        } else if (count1 == 2) {
+            image1.src = 'image/b1.jpg'
+        } else if (count1 == 3)
+            image1.src = 'image/c1.jpg'
+        else if (count1 == 4)
+            image1.src = 'image/d1.jpg'
+        else if (count1 == 5)
+            image1.src = 'image/e1.jpg'
+        else if (count1 == 6)
+            image1.src = 'image/f1.jpg'
+        else if (count1 == 7)
+            image1.src = 'image/g1.jpg'
+        else if (count1 == 8)
+            image1.src = 'image/h1.jpg'
+        else if (count1 == 9)
+            image1.src = 'image/i1.jpg'
+        else if (count1 == 10)
+            image1.src = 'image/j1.jpg'
+        else if (count1 == 11)
+            image1.src = 'image/k1.jpg'
+        else if (count1 == 12)
+            image1.src = 'image/l1.jpg'
+        else if (count1 == 13)
+            image1.src = 'image/m1.jpg'
+        else {
+            count1 = 0
+            image1.src = 'image/n1.jpg'
+        }
+        checkShadow()
+    }
+
+    function changeImage2() {
+        count2++;
+        if (count2 == 1) {
+            image2.src = 'image/a2.jpg'
+        } else if (count2 == 2) {
+            image2.src = 'image/b2.jpg'
+        } else if (count2 == 3)
+            image2.src = 'image/c2.jpg'
+        else if (count2 == 4)
+            image2.src = 'image/d2.jpg'
+        else if (count2 == 5)
+            image2.src = 'image/e2.jpg'
+        else if (count2 == 6)
+            image2.src = 'image/f2.jpg'
+        else if (count2 == 7)
+            image2.src = 'image/g2.jpg'
+        else if (count2 == 8)
+            image2.src = 'image/h2.jpg'
+        else if (count2 == 9)
+            image2.src = 'image/i2.jpg'
+        else if (count2 == 10)
+            image2.src = 'image/j2.jpg'
+        else if (count2 == 11)
+            image2.src = 'image/k2.jpg'
+        else if (count2 == 12)
+            image2.src = 'image/l2.jpg'
+        else if (count2 == 13)
+            image2.src = 'image/m2.jpg'
+        else {
+            count2 = 0
+            image2.src = 'image/n2.jpg'
+        }
+        checkShadow()
+    }
+
+    function changeImage3() {
+        count3++;
+        if (count3 == 1) {
+            image3.src = 'image/a3.jpg'
+        } else if (count3 == 2) {
+            image3.src = 'image/b3.jpg'
+        } else if (count3 == 3)
+            image3.src = 'image/c3.jpg'
+        else if (count3 == 4)
+            image3.src = 'image/d3.jpg'
+        else if (count3 == 5)
+            image3.src = 'image/e3.jpg'
+        else if (count3 == 6)
+            image3.src = 'image/f3.jpg'
+        else if (count3 == 7)
+            image3.src = 'image/g3.jpg'
+        else if (count3 == 8)
+            image3.src = 'image/h3.jpg'
+        else if (count3 == 9)
+            image3.src = 'image/i3.jpg'
+        else if (count3 == 10)
+            image3.src = 'image/j3.jpg'
+        else if (count3 == 11)
+            image3.src = 'image/k3.jpg'
+        else if (count3 == 12)
+            image3.src = 'image/l3.jpg'
+        else if (count3 == 13)
+            image3.src = 'image/m3.jpg'
+        else {
+            count3 = 0
+            image3.src = 'image/n3.jpg'
+        }
+        checkShadow()
+    }
+
+    function changeImage4() {
+        count4++;
+        if (count4 == 1) {
+            image4.src = 'image/a4.jpg'
+        } else if (count4 == 2) {
+            image4.src = 'image/b4.jpg'
+        } else if (count4 == 3)
+            image4.src = 'image/c4.jpg'
+        else if (count4 == 4)
+            image4.src = 'image/d4.jpg'
+        else if (count4 == 5)
+            image4.src = 'image/e4.jpg'
+        else if (count4 == 6)
+            image4.src = 'image/f4.jpg'
+        else if (count4 == 7)
+            image4.src = 'image/g4.jpg'
+        else if (count4 == 8)
+            image4.src = 'image/h4.jpg'
+        else if (count4 == 9)
+            image4.src = 'image/i4.jpg'
+        else if (count4 == 10)
+            image4.src = 'image/j4.jpg'
+        else if (count4 == 11)
+            image4.src = 'image/k4.jpg'
+        else if (count4 == 12)
+            image4.src = 'image/l4.jpg'
+        else if (count4 == 13)
+            image4.src = 'image/m4.jpg'
+        else {
+            count4 = 0
+            image4.src = 'image/n4.jpg'
+        }
+        checkShadow()
+    }
+
+    function checkShadow() {
+        if (count1 == count2 && count2 == count3 && count3 == count4) {
+            image1.style.boxShadow = '#ba1422 4px 4px 9px';
+            image2.style.boxShadow = '#ba1422 4px 4px 9px';
+            image3.style.boxShadow = '#ba1422 4px 4px 9px';
+            image4.style.boxShadow = '#ba1422 4px 4px 9px';
+        } else {
+            image1.style.boxShadow = 'grey 4px 4px 9px';
+            image2.style.boxShadow = 'grey 4px 4px 9px';
+            image3.style.boxShadow = 'grey 4px 4px 9px';
+            image4.style.boxShadow = 'grey 4px 4px 9px';
+        }
+    }
+</script>
